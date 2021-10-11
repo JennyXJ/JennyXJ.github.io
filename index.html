@@ -8,8 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <title>輪播卡片</title>
+    <script src="assets/home2.js"></script>
+    <title>大區塊卡片群組</title>
 </head>
 
 <body>
@@ -39,53 +39,86 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">輪播卡片</a>
+        <a class="navbar-brand" href="#">大區塊卡片群組</a>
 
         <div class="p-2 ml-1 collapse navbar-collapse row" id="navbarSupportedContent">
             <input class="form-control mr-sm-2 col-7 " type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0 col-2 " type="submit">Search</button>
         </div>
         <div class="card text-right">
-            <a href="#" class="btn btn-primary">Go</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                </svg>
+                <span class="badge badge-danger" id="shopNum"></span>
+
+            </button>
+            <!-- Modal -->
+            <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">購物車</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="field">
+                       
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">繼續購物</button>
+                            <button type="button" class="btn btn-primary">購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <br>
     <br>
     <br>
     <br>
+
     <div class="container">
-      
-    
         <div class="row">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row bg-danger">
             <div class="col">
                 <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                        <h5 class="card-title">紫色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紫色口罩</p>
+                            <p>$250</p>
                     </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+
                 </div>
             </div>
             <div class="col">
                 <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                        <h5 class="card-title">紅色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紅色口罩</p>
+                            <p>$10</p>
                     </div>
-                </div>
+                     <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          已加入購物車
+        </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+      </div>
+    </div>
+  </div> 
+                    </div>
             </div>
             <div class="col">
                 <div class="card mb-3">
@@ -140,9 +173,7 @@
                 </div>
             </div>
         </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row bg-warning">
+        <div class="row">
             <div class="col">
                 <div class="card mb-3">
                     <img src="..." class="card-img-top bg-dark p-5" alt="...">
@@ -221,107 +252,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row bg-dark">
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-            </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon bg-dark p-3" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-        </a>
-            
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon bg-dark p-3" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-        </a>
-        </div>  
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
 
 
 
@@ -331,4 +263,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
 </body></html>
