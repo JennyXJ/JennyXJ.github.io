@@ -30,4 +30,6 @@ function count(list,money,i){
     var exValue=document.getElementById(`ex${list}Value${i}`).value;
     document.getElementById(`ex${list}Value${i}`).setAttribute('value' , exValue);
     document.getElementById(`ex${list}Count${i}`).innerHTML = `NT$${exValue*money}`;
+    document.getElementById('thingNum').innerHTML =`${exValue}`;
+
 }
