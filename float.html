@@ -42,7 +42,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">浮動滑動監控</a>
+        <a class="navbar-brand" href="#">浮動區塊</a>
 
         <div class="p-2 ml-1 collapse navbar-collapse row" id="navbarSupportedContent">
             <input class="form-control mr-sm-2 col-7 " type="search" placeholder="Search" aria-label="Search">
@@ -564,17 +564,24 @@
 
     </div>
 
-    <div class="fixed-bottom  m-4">
-        <div class="col-2 float-right">
-            <div id="list-example" class="list-group">
-                <a class="list-group-item list-group-item-action" href="#list-item-1">猜你
-                    喜歡 1</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-2">猜你
-                    喜歡 2</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-3">猜你
-                    喜歡 3</a>
-
-            </div>
+    <div class="fixed-bottom m-4">
+        <div class="float-right">
+                <div class="btn-group-vertical">
+                    <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                          <a href="#" class="btn btn-outline-dark btn-lg" role="button" aria-pressed="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"></path>
+                            </svg>
+                            TOP
+                          </a>
+                    </div>
+                    <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                        <a href="#list-item-2" class="btn btn-outline-dark btn-lg" role="button" aria-pressed="true">
+                            猜你喜歡
+                        </a>
+                  </div>
+                </div>
+                
         </div>
     </div>
 
