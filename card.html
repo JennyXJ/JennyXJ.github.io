@@ -66,15 +66,15 @@
                             </button>
                         </div>
                         <div class="modal-body" id="field">
-                       
+
                         </div>
                         <div class="modal-footer">
                             <div class="align-self-center">
-                                      <span class="align-middle">總金額</span>
-                                      <span class="align-middle">NT$</span>
-                                      <span class="align-middle" id="totalSum" >0</span>
+                                <span class="align-middle">總金額</span>
+                                <span class="align-middle">NT$</span>
+                                <span class="align-middle" id="totalSum">0</span>
                             </div>
-                            
+
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">繼續購物</button>
                             <button type="button" class="btn btn-primary">購買</button>
                         </div>
@@ -91,176 +91,262 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="card mb-3">
+                <div class="card p-3">
                     <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">紫色口罩</h5>
                         <hr>
                         <p class="card-text">他是一個紫色口罩</p>
-                            <p>$250</p>
+                        <p>$250</p>
                     </div>
                     <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
 
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-3">
+                <div class="card p-3">
                     <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">紅色口罩</h5>
                         <hr>
                         <p class="card-text">他是一個紅色口罩</p>
-                            <p>$10</p>
+                        <p>$10</p>
                     </div>
-                     <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
                     <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-            <blockquote class="blockquote text-center">
-                <p class="mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                  </svg></p>
-                <footer>商品已加入購物車 </footer>
-              </blockquote>
-        </div>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
-      </div>
-    </div>
-  </div> 
-                    </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <blockquote class="blockquote text-center">
+                                        <p class="mb-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                            </svg>
+                                        </p>
+                                        <footer>商品已加入購物車 </footer>
+                                    </blockquote>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                <div class="card p-3">
+                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                        <h5 class="card-title">紫色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紫色口罩</p>
+                        <p>$250</p>
+                    </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3">
+                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">紅色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紅色口罩</p>
+                        <p>$10</p>
+                    </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <blockquote class="blockquote text-center">
+                                        <p class="mb-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                            </svg>
+                                        </p>
+                                        <footer>商品已加入購物車 </footer>
+                                    </blockquote>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                <div class="card p-3">
+                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                        <h5 class="card-title">紫色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紫色口罩</p>
+                        <p>$250</p>
                     </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                <div class="card p-3">
+                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                        <h5 class="card-title">紅色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紅色口罩</p>
+                        <p>$10</p>
+                    </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <blockquote class="blockquote text-center">
+                                        <p class="mb-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                            </svg>
+                                        </p>
+                                        <footer>商品已加入購物車 </footer>
+                                    </blockquote>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                <div class="card p-3">
+                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                        <h5 class="card-title">紫色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紫色口罩</p>
+                        <p>$250</p>
+                    </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3">
+                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">紅色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紅色口罩</p>
+                        <p>$10</p>
+                    </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <blockquote class="blockquote text-center">
+                                        <p class="mb-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                            </svg>
+                                        </p>
+                                        <footer>商品已加入購物車 </footer>
+                                    </blockquote>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                <div class="card p-3">
+                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                        <h5 class="card-title">紫色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紫色口罩</p>
+                        <p>$250</p>
+                    </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3">
+                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">紅色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紅色口罩</p>
+                        <p>$10</p>
+                    </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <blockquote class="blockquote text-center">
+                                        <p class="mb-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                            </svg>
+                                        </p>
+                                        <footer>商品已加入購物車 </footer>
+                                    </blockquote>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                <div class="card p-3">
+                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                        <h5 class="card-title">紫色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紫色口罩</p>
+                        <p>$250</p>
                     </div>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                <div class="card p-3">
+                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                        <h5 class="card-title">紅色口罩</h5>
+                        <hr>
+                        <p class="card-text">他是一個紅色口罩</p>
+                        <p>$10</p>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <blockquote class="blockquote text-center">
+                                        <p class="mb-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                            </svg>
+                                        </p>
+                                        <footer>商品已加入購物車 </footer>
+                                    </blockquote>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -276,5 +362,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  
+
 </body></html>
