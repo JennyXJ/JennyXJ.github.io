@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <script src="assets/home2.js"></script>
     <title>輪播卡片</title>
 </head>
 
@@ -54,274 +54,331 @@
     <br>
     <br>
     <div class="container">
-      
-    
-        <div class="row">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row bg-danger">
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card p-4">
+                                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">紫色口罩</h5>
+                                        <hr>
+                                        <p class="card-text">他是一個紫色口罩</p>
+                                        <p>$250</p>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card p-4">
+                                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">紅色口罩</h5>
+                                        <hr>
+                                        <p class="card-text">他是一個紅色口罩</p>
+                                        <p>$10</p>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <blockquote class="blockquote text-center">
+                                                        <p class="mb-0">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
+                                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                            </svg>
+                                                        </p>
+                                                        <footer>商品已加入購物車 </footer>
+                                                    </blockquote>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card p-4">
+                                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">紫色口罩</h5>
+                                        <hr>
+                                        <p class="card-text">他是一個紫色口罩</p>
+                                        <p>$250</p>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card p-4">
+                                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">紅色口罩</h5>
+                                        <hr>
+                                        <p class="card-text">他是一個紅色口罩</p>
+                                        <p>$10</p>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <blockquote class="blockquote text-center">
+                                                        <p class="mb-0">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
+                                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                            </svg>
+                                                        </p>
+                                                        <footer>商品已加入購物車 </footer>
+                                                    </blockquote>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card p-4">
+                                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">紫色口罩</h5>
+                                        <hr>
+                                        <p class="card-text">他是一個紫色口罩</p>
+                                        <p>$250</p>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card p-4">
+                                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">紅色口罩</h5>
+                                        <hr>
+                                        <p class="card-text">他是一個紅色口罩</p>
+                                        <p>$10</p>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping('2','紅色口罩','10','re')">購買</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <blockquote class="blockquote text-center">
+                                                        <p class="mb-0">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill text-secondary" viewBox="0 0 16 16">
+                                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                            </svg>
+                                                        </p>
+                                                        <footer>商品已加入購物車 </footer>
+                                                    </blockquote>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row bg-warning">
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row bg-dark">
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">商品名稱</h5>
+                                        <p class="card-text">商品介紹</p>
+                                        <footer class="row">
+                                            <p class="col">$250</p>
+                                            <p class="col">已售出120</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row bg-warning">
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row bg-dark">
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-3">
-                    <img src="..." class="card-img-top bg-dark p-5" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">商品名稱</h5>
-                        <p class="card-text">商品介紹</p>
-                        <footer class="row">
-                            <p class="col">$250</p>
-                            <p class="col">已售出120</p>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-                </div>
-            </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon bg-dark p-3" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-        </a>
-            
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon bg-dark p-3" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-        </a>
-        </div>  
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark p-3" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-dark p-3" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
         </div>
     </div>
     <br>
     <br>
     <br>
     <br>
+                 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:40px;" >
+	           <ol class="carousel-indicators"  style="margin-bottom:-10px;">
+		           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		           <li data-target="#myCarousel" data-slide-to="1"></li>
+		           <li data-target="#myCarousel" data-slide-to="2"></li>
+	           </ol>
+     <!-- Controls -->  
+           <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="margin-top:80px; height:30px; display:none">&lsaquo;</a>
+           <a class="right carousel-control" href="#myCarousel" data-slide="next" style="margin-top:80px; height:30px; display:none">&rsaquo;</a>
+</div>
 
 
 
