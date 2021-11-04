@@ -8,18 +8,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
     <link rel="stylesheet" href="./assets/scroll.css">
-
     <title>選擇測驗區塊</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-45XR731VSD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-45XR731VSD');
+
+    </script>
 </head>
 
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-5 text-center">購物網站測試</h1>
-          <p class="lead text-center">此為測試網站，並不會真正購物</p>
+            <h1 class="display-5 text-center">購物網站測試</h1>
+            <p class="lead text-center">此為測試網站，並不會真正購物</p>
         </div>
     </div>
     <div class="container">
@@ -28,36 +39,36 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Card-Group</h5>
                     <p class="text-center">大區塊卡片群組</p>
-                  </div>
-                  <img src="./assets/img/Card-Group.jpg" class="card-img-top" alt="...">
-                  <button class="btn btn-outline-light">
+                </div>
+                <img src="./assets/img/Card-Group.jpg" class="card-img-top" alt="...">
+                <button class="btn btn-outline-light">
                     確認請點擊進入
-                  </button>
+                </button>
             </a>
             <a href="./carousel.html" class="card btn btn-outline-secondary" role="button" aria-pressed="true">
                 <div class="card-body">
                     <h5 class="card-title text-center">Carousel</h5>
                     <p class="text-center">輪播圖</p>
-                  </div>
-                  <img src="./assets/img/carousel.jpg" class="card-img-top" alt="...">
-                  <button class="btn btn-outline-light">
+                </div>
+                <img src="./assets/img/carousel.jpg" class="card-img-top" alt="...">
+                <button class="btn btn-outline-light">
                     確認請點擊進入
-                  </button>
+                </button>
             </a>
 
             <a href="./overflow.html" class="card btn btn-outline-secondary" role="button" aria-pressed="true">
                 <div class="card-body">
                     <h5 class="card-title text-center">overflow</h5>
                     <p class="text-center">左右滑動</p>
-                  </div>
-                  <img src="./assets/img/overflow.jpg" class="card-img-top" alt="...">
-                  <button class="btn btn-outline-light">
+                </div>
+                <img src="./assets/img/overflow.jpg" class="card-img-top" alt="...">
+                <button class="btn btn-outline-light">
                     確認請點擊進入
-                  </button>
+                </button>
             </a>
-          </div>
+        </div>
     </div>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -67,5 +78,8 @@
         $('body').scrollspy({
             target: '#navbar-example'
         })
+
     </script>
-</body></html>
+</body>
+
+</html>
