@@ -16,11 +16,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">左右滑動</a>
+        <a class="navbar-brand" href="#">大區塊卡片群組</a>
+
         <div class="p-2 ml-1 collapse navbar-collapse row" id="navbarSupportedContent">
             <input class="form-control mr-sm-2 col-9 " type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0 col " type="submit">Search</button>
@@ -28,15 +29,15 @@
         <div class="card text-right">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
-
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
                 </svg>
                 <span class="badge badge-danger" id="shopNum"></span>
-
             </button>
-            <!-- Modal -->
-            <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        </div>
+    </nav>
+    <!-- 購物車Modal -->
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -46,23 +47,20 @@
                             </button>
                         </div>
                         <div class="modal-body" id="field">
-
                         </div>
                         <div class="modal-footer">
                             <div class="align-self-center">
                                 <span class="align-middle">總金額</span>
-                                <span class="align-middle">NT$</span>
-                                <span class="align-middle" id="totalSum">0</span>
+                                <span class="align-middle text-danger">NT$</span>
+                                <span class="align-middle text-danger" id="totalSum">0</span>
                             </div>
 
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">繼續購物</button>
-                            <button type="button" class="btn btn-primary">購買</button>
+                            <button type="button" class="btn btn-danger">購買</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
     <br>
     <div id="content"></div>
     <div class="container">
