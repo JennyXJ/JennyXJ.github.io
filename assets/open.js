@@ -1,7 +1,7 @@
-setTimeout("changeState()", 3000);
+setTimeout("changeState()", 30000);
 
 function changeState() { document.getElementById('content').innerHTML = `<div class="fixed-top" id="xclose">
-        <div class="float-right card mr-2 mb-2 x" style="width:15rem;">
+        <div class="float-right card mr-2 mb-2 shadow-sm border-danger" style="width:15rem;">
             <div class="modal-header">
                 <h5 class="modal-title">購買品項</h5>
                 <button type="button" class="btn btn-secondary" onclick="xCard()">x</button>
