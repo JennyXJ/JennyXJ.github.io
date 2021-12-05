@@ -15,12 +15,12 @@
     <title>輪播卡片</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">大區塊卡片群組</a>
+        <a class="navbar-brand" href="#">輪播卡片</a>
 
         <div class="p-2 ml-1 collapse navbar-collapse row" id="navbarSupportedContent">
             <input class="form-control mr-sm-2 col-9 " type="search" placeholder="Search" aria-label="Search">
@@ -63,7 +63,7 @@
     </div>
     <br>
     <div id="content"></div>
-    <div class="container">
+        <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -167,64 +167,87 @@
                 <img src="./assets/img/block3.png" class="img-fluid" alt="Responsive image">
             </div>
         </div><br>
-        <div class="rounded row justify-content-center" style="background:linear-gradient(to bottom, #f08d4e 0%, #ffffa5 100%);">
-        <div class="text-center text-white d-inline m-1">
-            <div class="h5 d-inline">- 零食 -</div>
-        </div><br>
-        <div class="overflow-auto">
-            <table class="table table-borderless">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            <div class="card" style="width:9rem;">
-                                <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
-                                <div class="p-2">
-                                    <h5 class="card-title text-center">紫色口罩</h5>
-                                    <div class="pl-2">他是一個紫色口罩</div>
-                                    <h5 class="text-right" style="color:coral;"> $250</h5>
-                                </div>
-                                <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
-                            </div>
-                        </th>
-                        <th scope="col">
-                            <div class="card" style="width:9rem;">
-                                <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
-                                <div class="p-2">
-                                    <h5 class="card-title text-center">口罩</h5>
-                                    <div class="pl-2">他是一個口罩</div><br>
-                                    <h5 class="text-right" style="color:coral;"> $50</h5>
-                                </div>
-                                <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(2,'口罩','50','re')">購買</button>
-                            </div>
-                        </th>
-                        <th scope="col">
-                            <div class="card" style="width:9rem;">
-                                <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
-                                <div class="p-2">
-                                    <h5 class="card-title text-center">紫色口罩</h5>
-                                    <div class="pl-2">他是一個紫色口罩</div>
-                                    <h5 class="text-right" style="color:coral;"> $250</h5>
-                                </div>
-                                <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
-                            </div>
-                        </th>
-                        <th scope="col">
-                            <div class="card" style="width:9rem;">
-                                <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
-                                <div class="p-2">
-                                    <h5 class="card-title text-center">口罩</h5>
-                                    <div class="pl-2">他是一個口罩</div><br>
-                                    <h5 class="text-right" style="color:coral;"> $50</h5>
-                                </div>
-                                <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(2,'口罩','50','re')">購買</button>
-                            </div>
-                        </th>
-                    </tr>
-                </thead>
-            </table>
         </div>
-       </div><br>
-         <!-- 猜你喜歡 -->
+        <!-- 滑動監控 -->
+        <nav id="navbar-example2" class="navbar bg-white sticky-top ">
+        <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item">
+                <a class="nav-link btn-outline-dark" href="#eatnav">零食</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-outline-danger" href="#likenav"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg> 猜你喜歡 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg></a>
+            </li>
+            
+        </ul>
+    </nav>
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <div class="container-fluid" id="eatnav">
+        <!-- 零食 -->
+        <div class="rounded row justify-content-center ">
+            <div class="container-fluid d-inline m-1 shadow-sm">
+                <div class="h6 d-inline"> - 零食 -</div>
+            </div>
+            <div class="overflow-auto">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="card" style="width:9rem;">
+                                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="p-2">
+                                        <h5 class="card-title text-center">紫色口罩</h5>
+                                        <div class="pl-2">他是一個紫色口罩</div>
+                                        <h5 class="text-right" style="color:coral;"> $250</h5>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="card" style="width:9rem;">
+                                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="p-2">
+                                        <h5 class="card-title text-center">口罩</h5>
+                                        <div class="pl-2">他是一個口罩</div><br>
+                                        <h5 class="text-right" style="color:coral;"> $50</h5>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(2,'口罩','50','re')">購買</button>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="card" style="width:9rem;">
+                                    <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="p-2">
+                                        <h5 class="card-title text-center">紫色口罩</h5>
+                                        <div class="pl-2">他是一個紫色口罩</div>
+                                        <h5 class="text-right" style="color:coral;"> $250</h5>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="card" style="width:9rem;">
+                                    <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="p-2">
+                                        <h5 class="card-title text-center">口罩</h5>
+                                        <div class="pl-2">他是一個口罩</div><br>
+                                        <h5 class="text-right" style="color:coral;"> $50</h5>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(2,'口罩','50','re')">購買</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <br>
+        </div>
+        <!-- 猜你喜歡 -->
+        <div class="container-fluid" id="likenav">
         <div class="text-center shadow-sm p-1 row">
             <div class="col" style="color:deeppink;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
@@ -236,7 +259,7 @@
         </div><br>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active pl-1 mt-4">
+                <div class="carousel-item active">
                     <div class="row justify-content-center">
                         <div class="m-1">
                             <div class="card " style="width:9rem;">
@@ -286,7 +309,7 @@
 
                     </div>
                 </div>
-                <div class="carousel-item bg-warning pl-1 mt-4">
+                <div class="carousel-item bg-warning">
                     <div class="row justify-content-center">
                         <div class="m-1">
                             <div class="card " style="width:9rem;">
@@ -336,7 +359,7 @@
 
                     </div>
                 </div>
-                <div class="carousel-item bg-dark pl-1 mt-4">
+                <div class="carousel-item bg-dark">
                     <div class="row justify-content-center">
                         <div class="m-1">
                             <div class="card " style="width:9rem;">
@@ -388,16 +411,25 @@
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon btn bg-danger p-3" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon btn bg-dark p-3" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon btn bg-danger p-3" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon btn bg-dark p-3" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div></div>
         </div>
-
-    </div>
+   <!-- footer -->
+    <footer class="fixed-bottom" >
+        <div class="float-right m-2" id="gotop">
+            <div href="" class="text-decoration-none btn btn-outline-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"></path>
+                </svg>
+            </div>
+        </div>
+    </footer>
     <!-- Modal已加入購物車 -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -416,16 +448,28 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script type="text/javascript">
+$(function(){
+    $("#gotop").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },1000);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
+</script>
 </body></html>
