@@ -186,7 +186,12 @@
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                     </svg></a>
             </li>
-
+            <li class="nav-item">
+                <a class="nav-link btn-outline-dark alert alert-warning p-2" href="#timenav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16"><path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"/></svg>
+                    限時特賣
+                </a>
+            </li>
         </ul>
     </nav>
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
@@ -374,6 +379,67 @@
                         </tr>
                     </thead>
                 </table>
+            </div>
+            <br>
+        </div>
+        <!-- 限時特賣 -->
+        <div class="container-fluid" id="timenav">
+            <div class="rounded row justify-content-center">
+                <div class="container-fluid d-inline m-1 shadow-sm">
+                    <div class="h6 d-inline"> - 飲料 -</div>
+                </div>
+                <div class="overflow-auto">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="card" style="width:9rem;">
+                                        <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
+                                        <div class="p-2">
+                                            <h5 class="card-title text-center">紫色口罩</h5>
+                                            <div class="pl-2">他是一個紫色口罩</div>
+                                            <h5 class="text-right" style="color:coral;"> $250</h5>
+                                        </div>
+                                        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="card" style="width:9rem;">
+                                        <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                                        <div class="p-2">
+                                            <h5 class="card-title text-center">口罩</h5>
+                                            <div class="pl-2">他是一個口罩</div><br>
+                                            <h5 class="text-right" style="color:coral;"> $50</h5>
+                                        </div>
+                                        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(2,'口罩','50','re')">購買</button>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="card" style="width:9rem;">
+                                        <img src="assets/img/ne.png" class="card-img-top bg-dark" alt="...">
+                                        <div class="p-2">
+                                            <h5 class="card-title text-center">紫色口罩</h5>
+                                            <div class="pl-2">他是一個紫色口罩</div>
+                                            <h5 class="text-right" style="color:coral;"> $250</h5>
+                                        </div>
+                                        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(1,'紫色口罩','250','ne')">購買</button>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="card" style="width:9rem;">
+                                        <img src="assets/img/re.png" class="card-img-top bg-dark" alt="...">
+                                        <div class="p-2">
+                                            <h5 class="card-title text-center">口罩</h5>
+                                            <div class="pl-2">他是一個口罩</div><br>
+                                            <h5 class="text-right" style="color:coral;"> $50</h5>
+                                        </div>
+                                        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(2,'口罩','50','re')">購買</button>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
             </div>
             <br>
         </div>
