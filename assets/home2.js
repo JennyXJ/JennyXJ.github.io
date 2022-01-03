@@ -5,18 +5,20 @@ function shopping(list, commodity, money, img) {
   num++;
   shopNum++;
 
-  document.getElementById("field").innerHTML += `<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups" id="ex${list}_${num}">
-                                <div class="btn-group" role="group" aria-label="First group">
-                                    <img src="assets/img/${img}.png" alt="商品圖" class="img-thumbnail" style="height: 60px;">
-                                    <div class="align-self-center">${commodity}</div>
-                                </div>
-                                <div class="input-group align-self-center">
-                                    <div class="align-self-center" style="color:coral;" id="ex${list}Count${num}">NT$${money}</div>
-                                    <option value="${money}" name="minTotalMoney"></option>
-                                    <input style="width:45px;height:38px;" class="quantity" min="1" name="quantity" value="1" type="number" id="ex${list}Value${num}" onchange="count(${list},${money},${num})">
-                                    <button  class="btn text-danger" onclick="noShopping(${list},${num})">x</button>
-                                </div>
-                            </div><br>`;
+  document.getElementById("field").innerHTML += `<div class="justify-content-between bg-light" role="toolbar" aria-label="Toolbar with button groups" id="ex${list}_${num}">
+    <div class="btn-group" role="group" aria-label="First group">
+        <img src="assets/img/${img}.png" alt="商品圖" class="img-thumbnail" style="height: 60px;">
+        <div class="align-self-center">${commodity}</div>
+    </div><br>
+    <div class="input-group align-self-center row">
+        <div class="col"></div>
+        <div class="align-self-center" style="color:coral;" id="ex${list}Count${num}">NT$${money}</div>
+        <option value="${money}" name="minTotalMoney"></option>
+        <input style="width:45px;height:38px;" class="quantity" min="1" name="quantity" value="1" type="number" id="ex${list}Value${num}" onchange="count(${list},${money},${num})">
+        <button class="btn btn-warning" onclick="noShopping(${list},${num})">刪除商品</button>
+    </div><hr>
+</div>
+`;
   document.getElementById("shopNum").innerHTML = shopNum;
   if (shopNum >= 1) {
   document.getElementById("shopNum").style.display = "inline";
@@ -46,8 +48,8 @@ function count(list, money, i) {
 }
     
 function totalCoin(){
-  //計算次數(exAll=搜尋整個Html單獨只有class="btn-toolbar justify-content-between"的有幾個)
-    var exAll=document.querySelectorAll("div[class='btn-toolbar justify-content-between']").length
+  //計算次數(exAll=搜尋整個Html單獨只有class="justify-content-between bg-light"的有幾個)
+    var exAll=document.querySelectorAll("div[class='justify-content-between bg-light']").length
     var sum = 0;
     for(let a=exAll ; a>0 ; a-- ){
       console.log(a)
@@ -58,6 +60,6 @@ function totalCoin(){
     }
     document.getElementById(`totalSum`).innerHTML = sum
     console.log(document.querySelectorAll(
-      "div[class='btn-toolbar justify-content-between']"
+      "div[class='justify-content-between bg-light']"
     ));
     }
