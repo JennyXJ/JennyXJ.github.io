@@ -12,6 +12,20 @@
     <script src="assets/home2.js"></script>
     <!-- open -->
     <script src="./assets/open.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-45XR731VSD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-45XR731VSD');
+
+    </script>
     <title>大區塊卡片群組</title>
 </head>
 
@@ -21,11 +35,29 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">大區塊卡片群組</a>
-
-        <div class="p-2 ml-1 collapse navbar-collapse row" id="navbarSupportedContent">
-            <input class="form-control mr-sm-2 col-9 " type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 col " type="submit">Search</button>
-        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">商品強檔</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">99免運</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">猜你喜歡</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="./index.html">回選擇畫面</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
         <div class="card text-right">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
@@ -189,67 +221,68 @@
     <!-- 限時特賣 -->
     <br>
     <div class="container-fluid">
-            <div class="rounded row justify-content-center bg-warning">
-                <div class="container-fluid d-inline m-1 shadow-sm text-center  rounded" style="background-color: #9f0423;">
-                    <div class="h2 d-inline text-white ml-5"> - 限時特賣 -</div>
-                    <span class="h6 badge badge-warning float-right mt-3">搶購去</span>
-                </div>
-                <div class="overflow-auto">
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                                <th scope="col">
-                                    <div class="card" style="width:9rem;">
-                                        <img src="assets/img/cheapem.png" class="card-img-top bg-dark" alt="...">
-                                        <div class="p-2">
-                                            <h5 class="card-title text-center">義美</h5>
-                                            <div class="pl-2">小泡芙巧克力171G量販包</div>
-                                            <h5 class="text-right" style="color:coral;">
-                                                <small class="text-muted">(3入/盒) </small>$79</h5>
-                                        </div>
-                                        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(21,'義美-小泡芙巧克力171G量販包(3入/盒) ','79','cheapem')">購買</button>
-                                    </div>
-                                </th>
-                                <th scope="col">
-                                    <div class="card" style="width:9rem;">
-                                        <img src="assets/img/cheapmc.png" class="card-img-top bg-dark" alt="...">
-                                        <div class="p-2">
-                                            <h5 class="card-title text-center">每朝健康</h5>
-                                            <div class="pl-2">雙纖綠茶650ml</div><br>
-                                            <h5 class="text-right" style="color:coral;"><small class="text-muted">(24入/箱) </small> $569</h5>
-                                        </div>
-                                        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(22,'每朝健康-雙纖綠茶650ml(24入/箱) ','569','cheapmc')">購買</button>
-                                    </div>
-                                </th>
-                                <th scope="col">
-                                    <div class="card" style="width:9rem;">
-                                        <img src="assets/img/cheapto.png" class="card-img-top bg-dark" alt="...">
-                                        <div class="p-2">
-                                            <h5 class="card-title text-center">好麗友</h5>
-                                            <div class="pl-2">烏龜玉米脆片</div><br>
-                                            <h5 class="text-right" style="color:coral;"><small class="text-muted">(80g x6) </small> $52</h5>
-                                        </div>
-                                        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(23,'好麗友-烏龜玉米脆片(80g x6) ','52','cheapto')">購買</button>
-                                    </div>
-                                </th>
-                                <th scope="col">
-                                    <div class="card" style="width:9rem;">
-                                        <img src="assets/img/cheapclb.png" class="card-img-top bg-dark" alt="...">
-                                        <div class="p-2">
-                                            <h5 class="card-title text-center">小老板</h5>
-                                            <div class="pl-2">海苔棒棒捲(原味3g)</div>
-                                            <h5 class="text-right" style="color:coral;"><small class="text-muted">(x6盒) </small> $579</h5>
-                                        </div>
-                                        <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(24,'小老板-海苔棒棒捲(原味3g)(x6盒) ','579','cheapclb')">購買</button>
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
+        <div class="rounded row justify-content-center bg-warning">
+            <div class="container-fluid d-inline m-1 shadow-sm text-center  rounded" style="background-color: #9f0423;">
+                <div class="h2 d-inline text-white ml-5"> - 限時特賣 -</div>
+                <span class="h6 badge badge-warning float-right mt-3">搶購去</span>
             </div>
-            <br>
+            <div class="overflow-auto">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="card" style="width:9rem;">
+                                    <img src="assets/img/cheapem.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="p-2">
+                                        <h5 class="card-title text-center">義美</h5>
+                                        <div class="pl-2">小泡芙巧克力171G量販包</div>
+                                        <h5 class="text-right" style="color:coral;">
+                                            <small class="text-muted">(3入/盒) </small>$79
+                                        </h5>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(21,'義美-小泡芙巧克力171G量販包(3入/盒) ','79','cheapem')">購買</button>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="card" style="width:9rem;">
+                                    <img src="assets/img/cheapmc.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="p-2">
+                                        <h5 class="card-title text-center">每朝健康</h5>
+                                        <div class="pl-2">雙纖綠茶650ml</div><br>
+                                        <h5 class="text-right" style="color:coral;"><small class="text-muted">(24入/箱) </small> $569</h5>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(22,'每朝健康-雙纖綠茶650ml(24入/箱) ','569','cheapmc')">購買</button>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="card" style="width:9rem;">
+                                    <img src="assets/img/cheapto.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="p-2">
+                                        <h5 class="card-title text-center">好麗友</h5>
+                                        <div class="pl-2">烏龜玉米脆片</div><br>
+                                        <h5 class="text-right" style="color:coral;"><small class="text-muted">(80g x6) </small> $52</h5>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(23,'好麗友-烏龜玉米脆片(80g x6) ','52','cheapto')">購買</button>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="card" style="width:9rem;">
+                                    <img src="assets/img/cheapclb.png" class="card-img-top bg-dark" alt="...">
+                                    <div class="p-2">
+                                        <h5 class="card-title text-center">小老板</h5>
+                                        <div class="pl-2">海苔棒棒捲(原味3g)</div>
+                                        <h5 class="text-right" style="color:coral;"><small class="text-muted">(x6盒) </small> $579</h5>
+                                    </div>
+                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(24,'小老板-海苔棒棒捲(原味3g)(x6盒) ','579','cheapclb')">購買</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
+        <br>
+    </div>
     <!-- 滑動監控 -->
     <nav id="navbar-example2" class="navbar sticky-top justify-content-center mt-2 bg-light rounded-bottom m-1 shadow-sm">
         <ul class="nav nav-pills nav-fill ">
@@ -271,10 +304,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link btn-outline-danger" href="#likenav">
-                    
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                    </svg> 
+                    </svg>
                     猜你喜歡
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
@@ -409,22 +441,17 @@
             <br>
         </div>
         <!-- 猜你喜歡 -->
-        <div class="container-fluid bg-light" id="likenav">
+        <div class="container-fluid bg-danger " id="likenav">
             <div class="text-center shadow-sm p-1 row bg-white">
-                <div class="col" style="color:deeppink;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-
+                <div class="col" style="color:deeppink;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                    </svg>
-                </div>
-                <div class="col h6 pt-1">-猜你喜歡-</div>
-                <div class="col" style="color:deeppink;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    </svg></div>
+                <div class="col">-猜你喜歡-</div>
+                <div class="col" style="color:deeppink;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                    </svg>
-                </div>
+                    </svg></div>
             </div><br>
-            <div class="row justify-content-center bg-light">
+            <div class="row justify-content-center bg-danger">
                 <div class="m-1">
                     <div class="card " style="width:9rem;">
                         <img src="assets/img/likecd.png" class="card-img-top bg-dark" alt="...">
@@ -614,5 +641,8 @@
                 }
             });
         });
+
     </script>
-</body></html>
+</body>
+
+</html>
