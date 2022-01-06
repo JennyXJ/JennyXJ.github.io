@@ -24,7 +24,6 @@
         gtag('js', new Date());
 
         gtag('config', 'G-45XR731VSD');
-
     </script>
     <title>大區塊卡片群組</title>
 </head>
@@ -35,29 +34,19 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">大區塊卡片群組</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">商品強檔</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">99免運</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">猜你喜歡</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./index.html">回選擇畫面</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+        <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a class="flex-sm-fill btn btn-dark m-1" href="./index.html">回首頁</a>
+                <a class="flex-sm-fill btn btn-dark m-1" href="#">零食</a>
+                <a class="flex-sm-fill btn btn-dark m-1" href="#">飲料</a>
+                <a class="flex-sm-fill btn btn-dark m-1" href="#">猜你喜歡</a>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </nav>
+            
+        </div>
         <div class="card text-right">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
@@ -453,18 +442,18 @@
             </div><br>
             <div class="row justify-content-center bg-danger">
                 <div class="m-1">
-                    <div class="card " style="width:9rem;">
+                    <div class="card " style="width:10.5rem;">
                         <img src="assets/img/likecd.png" class="card-img-top bg-dark" alt="...">
                         <div class="p-2">
                             <h5 class="card-title text-center font-weight-normal">Cheetos奇多</h5>
-                            <div class="pl-2">奇多蝦片原味(47g)</div>
+                            <div class="pl-2">奇多蝦片原味(47g)</div><br>
                             <h5 class="text-right" style="color:coral;"> $42</h5>
                         </div>
                         <button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter" onclick="shopping(9,'Cheetos奇多奇多蝦片原味(47g)','42','likecd')">購買</button>
                     </div>
                 </div>
                 <div class="m-1">
-                    <div class="card" style="width:9rem;">
+                    <div class="card" style="width:10.5rem;">
                         <img src="assets/img/likecola.png" class="card-img-top bg-dark" alt="...">
                         <div class="p-2">
                             <h5 class="card-title text-center">可口可樂</h5>
@@ -641,8 +630,5 @@
                 }
             });
         });
-
     </script>
-</body>
-
-</html>
+</body></html>
