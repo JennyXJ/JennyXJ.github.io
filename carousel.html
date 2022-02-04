@@ -62,7 +62,11 @@
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">購物車</h5>
+                    <button type="button" class="btn btn-secondary">購物車</button>
+                    <h2 class="text-secondary">➞</h2>
+                    <button type="button" class="btn btn-outline-secondary">資料填寫</button>
+                    <h2 class="text-secondary">➞</h2>
+                    <button type="button" class="btn btn-outline-secondary">完成訂單</button>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -82,23 +86,83 @@
             </div>
         </div>
     </div>
-    <!-- 謝謝購買 -->
+    <!-- 資料填寫 -->
     <div class="modal fade" id="thanks" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog " role="document">
             <div class="modal-content">
                 <div class="modal-header">
+                    <button type="button" class="btn btn-outline-secondary">購物車</button>
+                    <h2 class="text-secondary">➞</h2>
+                    <button type="button" class="btn btn-secondary">資料填寫</button>
+                    <h2 class="text-secondary">➞</h2>
+                    <button type="button" class="btn btn-outline-secondary">完成訂單</button>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body text-center">
-                    <h1 class="text-danger">THANK YOU</h1><br>感謝您的購買:)
-                </div>
+                <div class="modal-body ">
+                    <label for="basic-url">顧客資料</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">名稱</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="輪播圖" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
 
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">電子信箱</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+                    <label for="basic-url">付款方式</label>
+                    <div class="input-group">
+                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected>請選擇...</option>
+                            <option value="1">全家便利商店</option>
+                            <option value="2">7-ELEVEN</option>
+                            <option value="3">OK超商</option>
+                        </select>
+                        <div class="input-group-append">
+                            <a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                確定
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    取貨付款
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    線上刷卡(一次付清)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bd-example-modal-sm" data-dismiss="modal">完成訂單</button>
+                </div>
             </div>
         </div>
     </div>
     <br>
+    <!-- 完成訂單 -->
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content text-center h2 text-danger font-weight-bold">
+                感謝您的購買
+            </div>
+        </div>
+    </div>
     <!-- 每秒跳出購物視窗 -->
     <div id="content"></div>
     <!-- 網頁開始 -->
