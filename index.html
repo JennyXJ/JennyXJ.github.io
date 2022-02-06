@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/scroll.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-45XR731VSD"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -21,24 +21,38 @@
         gtag('js', new Date());
 
         gtag('config', 'G-45XR731VSD');
-
     </script>
--->
-    <!-- ga點擊 
+    <!-- ga點擊 -->
     <script src="assets/home2.min.js"></script>
--->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5F39QWV');
+    </script>
+    <!-- End Google Tag Manager -->
     <title>選擇測驗區塊</title>
 </head>
 <style>
     body {
         position: relative;
     }
-
 </style>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCS5VND" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F39QWV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -48,7 +62,7 @@
     </div>
     <div class="container">
         <div class="card-deck">
-            <a href="./card.html" class="card btn btn-outline-secondary" role="button" aria-pressed="true" id="Card-Group">
+            <a href="./card.html" class="card btn btn-outline-secondary cardClick" role="button" aria-pressed="true" id="Card-Group">
                 <div class="card-body">
                     <h5 class="card-title text-center">Card-Group</h5>
                     <p class="text-center">大區塊卡片群組</p>
@@ -91,8 +105,5 @@
         $('body').scrollspy({
             target: '#navbar-example'
         })
-
     </script>
-</body>
-
-</html>
+</body></html>
